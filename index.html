@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rezae Cloud Kitchen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1604908554268-5d673d8a6ec0?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      color: #ff5722;
+      margin-bottom: 30px;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+    .card-content h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .card-content p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #ff5722;
+    }
+    .contact, .order {
+      background: #fff3e0;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .contact p, .order p {
+      font-size: 1em;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebc59;
+    }
+    footer {
+      text-align: center;
+      background-color: #ff5722;
+      color: white;
+      padding: 15px 10px;
+      margin-top: 50px;
+    }
+    a {
+      color: #ff5722;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rezae Cloud Kitchen</h1>
+    <p>Serving Flavor, Freshness & Love</p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590080876270-3ebd9c0475ff?auto=format&fit=crop&w=800&q=80" alt="Chicken Biryani">
+        <div class="card-content">
+          <h3>Chicken Biryani</h3>
+          <p>₹80</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601050690180-b87dffb5a750?auto=format&fit=crop&w=800&q=80" alt="Kabab">
+        <div class="card-content">
+          <h3>Kabab</h3>
+          <p>₹50</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1632721921902-d07efb204d42?auto=format&fit=crop&w=800&q=80" alt="Kushka">
+        <div class="card-content">
+          <h3>Kushka</h3>
+          <p>₹40</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:alir39700@gmail.com">alir39700@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918610849213">8610849213</a> / <a href="tel:+917871462064">7871462064</a></p>
+    </div>
+
+    <div class="order">
+      <h2>Order Now</h2>
+      <p>Click below to order directly on WhatsApp</p>
+      <a class="whatsapp-button" href="https://wa.me/918610849213?text=Hi!%20I%20would%20like%20to%20order%20from%20Rezae%20Cloud%20Kitchen" target="_blank">
+        📲 Order on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Rezae Cloud Kitchen | Designed with ❤️
+  </footer>
+
+</body>
+</html>
